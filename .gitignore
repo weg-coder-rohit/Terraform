@@ -1,0 +1,3 @@
+**/.terraform/*
+main-key
+main-key.pub
