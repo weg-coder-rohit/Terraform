@@ -1,3 +1,3 @@
-provider "aws" {
-  region = var.REGION
+module "vnet" {
+  source = "./module/vnet"
 }
