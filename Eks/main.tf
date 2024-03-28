@@ -116,3 +116,17 @@ resource "aws_eks_addon" "ebs-csi" {
     "terraform" = "true"
   }
 }
+
+resource "null_resource" "create_namespaces" {
+  provisioner "local-exec" {
+    command = "kubectl create namespace dev && kubectl create namespace prod"
+  }
+  depends_on = [module.eks.cluster_name]
+}
+
+# resource "null_resource" "configure_kubectl" {
+#   provisioner "local-exec" {
+#     command = "aws eks update-kubeconfig --name ${module.eks.cluster_name]}"
+#   }
+#   depends_on = [module.eks.cluster_name]
+# }
