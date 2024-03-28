@@ -1,5 +1,5 @@
 resource "aws_security_group" "first_terra_secgrp" {
-  vpc_id      = aws_vpc.Terra_first_vpc.id
+  vpc_id      = module.vnet.aws_vpc.Terra_first_vpc.id
   name        = "First_terra_Stack_Security_group"
   description = "First_terra_Stack_Security_group"
 

@@ -62,5 +62,5 @@ variable "PRIV_key" {
 }
 
 variable "MYIP" {
-  default = "110.235.216.15/32"
+  default = "110.235.216.56/32"
 }
