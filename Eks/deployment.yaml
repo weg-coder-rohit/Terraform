@@ -1,0 +1,19 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: my-application
+# spec:
+#   replicas: 3
+#   selector:
+#     matchLabels:
+#       app: my-application
+#   template:
+#     metadata:
+#       labels:
+#         app: my-application
+#     spec:
+#       containers:
+#       - name: my-application-container
+#         image: 730335359929.dkr.ecr.ap-south-1.amazonaws.com/webappimg
+#         ports:
+#         - containerPort: 80
