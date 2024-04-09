@@ -6,6 +6,11 @@
 #   source = "./module/instances"
 # }
 
-module "SONAR-SERVER" {
-  source = "./module/SONAR-SERVER"
+# module "SONAR-SERVER" {
+#   source = "./module/SONAR-SERVER"
+# }
+
+module "DOCKER-SERVER" {
+  source = "./module/DOCKER-SERVER"
+  
 }
