@@ -12,5 +12,5 @@
 
 module "DOCKER-SERVER" {
   source = "./module/DOCKER-SERVER"
-  
+
 }
