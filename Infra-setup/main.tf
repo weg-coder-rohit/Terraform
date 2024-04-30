@@ -10,7 +10,12 @@
 #   source = "./module/SONAR-SERVER"
 # }
 
-module "DOCKER-SERVER" {
-  source = "./module/DOCKER-SERVER"
+# module "DOCKER-SERVER" {
+#   source = "./module/DOCKER-SERVER"
+# }
 
+module "Jenkins-Server" {
+  source = "./module/Jenkins-Server"
 }
+
+
