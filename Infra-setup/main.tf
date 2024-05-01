@@ -1,6 +1,6 @@
-# module "vnet" {
-#   source = "./module/vnet"
-# }
+module "vnet" {
+  source = "./module/vnet"
+}
 
 # module "instances" {
 #   source = "./module/instances"
@@ -14,8 +14,8 @@
 #   source = "./module/DOCKER-SERVER"
 # }
 
-module "Jenkins-Server" {
-  source = "./module/Jenkins-Server"
-}
+# module "Jenkins-Server" {
+#   source = "./module/Jenkins-Server"
+# }
 
 
