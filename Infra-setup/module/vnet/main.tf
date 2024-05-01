@@ -109,3 +109,9 @@ resource "aws_route_table_association" "terraroute_table_association3" {
   subnet_id      = aws_subnet.PUBSUB3.id
   route_table_id = aws_route_table.Terra_first_VPC_routetable.id
 }
+
+
+resource "aws_route_table_association" "terraroute_table_association4" {
+  subnet_id      = aws_subnet.PRIVSUB1.id
+  route_table_id = aws_route_table.Terra_first_VPC_routetable.id
+}
