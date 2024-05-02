@@ -14,9 +14,9 @@
 #   source = "./module/DOCKER-SERVER"
 # }
 
-# module "Jenkins-Server" {
-#   source = "./module/Jenkins-Server"
-# }
+module "Jenkins-Server" {
+  source = "./module/Jenkins-Server"
+}
 
 # provider "aws" {
 #   region = "us-west-2"  # Replace with your desired AWS region
